@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-18T19:00:11.413293" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="C:\Projetos_2024\RobotFramework">
+<suite id="s1-s1" name="Teste" source="C:\Projetos_2024\RobotFramework\Teste.robot">
+<test id="s1-s1-t1" name="Caso 01 - Acessando meu perfil no Linkedin" line="11">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-18T19:00:11.813530" level="INFO">Opening browser 'chrome' to base url 'https://www.linkedin.com/in/bruno-pequeno-tec/'.</msg>
+<arg>https://www.linkedin.com/in/bruno-pequeno-tec/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-18T19:00:11.813530" elapsed="7.105698"/>
+</kw>
+<status status="PASS" start="2024-03-18T19:00:11.813530" elapsed="7.106698"/>
+</kw>
+<status status="PASS" start="2024-03-18T19:00:11.813530" elapsed="7.107206"/>
+</test>
+<status status="PASS" start="2024-03-18T19:00:11.463716" elapsed="7.460682"/>
+</suite>
+<status status="PASS" start="2024-03-18T19:00:11.430213" elapsed="7.498427"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Teste">RobotFramework.Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
