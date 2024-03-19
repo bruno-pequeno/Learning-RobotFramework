@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-19T12:54:25.106777" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="C:\Projetos_2024\RobotFramework\Preenchendo_Forms\form.robot">
+<test id="s1-t1" name="Caso 1: Preencher formulário" line="32">
+<kw name="abrir navegador e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:54:25.577244" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>https://demoqa.com/automation-practice-form</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-19T12:54:25.577244" elapsed="73.533318"/>
+</kw>
+<status status="PASS" start="2024-03-19T12:54:25.575090" elapsed="73.536483"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:39.112561" level="INFO">Typing text 'Bruno' into text field 'id:firstName'.</msg>
+<arg>${input_firstName}</arg>
+<arg>Bruno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:39.112561" elapsed="0.213454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:39.327070" level="INFO">Typing text 'Pequeno' into text field 'id:lastName'.</msg>
+<arg>${input_lastName}</arg>
+<arg>Pequeno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:39.327070" elapsed="0.189407"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:39.517481" level="INFO">Typing text 'bruno.tec@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>${input_userEmail}</arg>
+<arg>bruno.tec@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:39.516477" elapsed="0.291499"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:39.808984" level="INFO">Typing text '1140028922' into text field 'id:userNumber'.</msg>
+<arg>${input_userNumber}</arg>
+<arg>1140028922</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:39.808984" elapsed="0.202949"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:40.011933" level="INFO">Typing text '01 Jan 2020' into text field 'id:dateOfBirthInput'.</msg>
+<arg>${input_dateOfBirthInput}</arg>
+<arg>01 Jan 2020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:40.011933" elapsed="0.418062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-19T12:55:40.429995" level="INFO">Typing text 'xxxxxxxxxxxx' into text field 'id:currentAddress'.</msg>
+<arg>${textarea_currentAddress}</arg>
+<arg>xxxxxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-19T12:55:40.429995" elapsed="0.198390"/>
+</kw>
+<status status="PASS" start="2024-03-19T12:55:39.111573" elapsed="1.516812"/>
+</kw>
+<status status="PASS" start="2024-03-19T12:54:25.574092" elapsed="75.054293"/>
+</test>
+<status status="PASS" start="2024-03-19T12:54:25.109776" elapsed="75.520116"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
