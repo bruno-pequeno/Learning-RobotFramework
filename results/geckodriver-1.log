@@ -1,0 +1,30 @@
+1724343672887	geckodriver	INFO	Listening on 127.0.0.1:50119
+1724343675975	mozrunner::runner	INFO	Running command: "C:\\Users\\brupe\\.cache\\selenium\\firefox\\win64\\129.0.2\\firefox.exe" "--marionette" "--remote-debuggin ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\brupe\\AppData\\Local\\Temp\\rust_mozprofiledPGtBB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1724343677342	Marionette	INFO	Marionette enabled
+1724343677950	Marionette	INFO	Listening on port 50133
+WebDriver BiDi listening on ws://127.0.0.1:50120
+Read port: 50133
+1724343678384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 427: TypeError: c(...).setup is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/RlFX-4NwKm1Os67zlSzR0i3vyvyfLiVfrrl7q6krc_4.js line 2 > eval line 7362 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/RlFX-4NwKm1Os67zlSzR0i3vyvyfLiVfrrl7q6krc_4.js line 2 > eval line 1544 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1724343705889	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1724343707455	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/RlFX-4NwKm1Os67zlSzR0i3vyvyfLiVfrrl7q6krc_4.js line 2 > eval line 5555 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://demoqa.com/automation-practice-form" ({})
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c, line 158: Script terminated by timeout at:
+Ab@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:158:128
+il@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:331:640
+lm@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:341:720
+hH/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:624:178
+ba.Wk/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:567:126
+ba.Wk/c/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c:566:420
+
+1724343841748	Marionette	INFO	Stopped listening on port 50133
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

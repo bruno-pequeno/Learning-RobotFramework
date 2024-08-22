@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-08-22T14:52:25.975294" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="c:\Projetos_2024\RobotFramework">
+<suite id="s1-s1" name="Preenchendo Forms" source="c:\Projetos_2024\RobotFramework\Preenchendo_Forms">
+<suite id="s1-s1-s1" name="Form" source="c:\Projetos_2024\RobotFramework\Preenchendo_Forms\form.robot">
+<test id="s1-s1-s1-t1" name="Caso 1: Preencher formulário" line="53">
+<kw name="abrir navegador e acessar o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:26.406412" level="INFO">Opening browser 'edge' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>https://demoqa.com/automation-practice-form</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-22T14:52:26.405902" elapsed="14.764618"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-22T14:52:41.171519" elapsed="0.008009"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${input_firstName}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-22T14:52:41.180527" elapsed="0.017513"/>
+</kw>
+<status status="PASS" start="2024-08-22T14:52:26.403997" elapsed="14.794043"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:41.200034" level="INFO">Typing text 'Bruno' into text field 'id:firstName'.</msg>
+<arg>${input_firstName}</arg>
+<arg>Bruno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T14:52:41.200034" elapsed="0.208637"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:41.411684" level="INFO">Typing text 'Pequeno' into text field 'id:lastName'.</msg>
+<arg>${input_lastName}</arg>
+<arg>Pequeno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T14:52:41.409674" elapsed="0.215665"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:41.627340" level="INFO">Typing text 'bruno.tec@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>${input_userEmail}</arg>
+<arg>bruno.tec@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T14:52:41.625339" elapsed="0.442259"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:42.068601" level="INFO">Typing text '1140028922' into text field 'id:userNumber'.</msg>
+<arg>${input_userNumber}</arg>
+<arg>1140028922</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T14:52:42.067598" elapsed="0.319703"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:42.389303" level="INFO">Typing text 'Ma' into text field 'xpath://input[@id='subjectsInput']'.</msg>
+<arg>${input_subjects}</arg>
+<arg>Ma</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-22T14:52:42.388303" elapsed="0.242649"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${autocomplete_subject}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-22T14:52:42.631949" elapsed="0.034000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-22T14:52:42.666955" level="INFO">Clicking element 'xpath://div[contains(@class, 'subjects-auto-complete__option') and text()='Maths']'.</msg>
+<msg time="2024-08-22T14:52:44.015474" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-22T14:52:44.015474" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="subjects-auto-complete__option subjects-auto-complete__option--is-focused css-1n7v3ny-option" id="react-select-2-option-0" tabindex="-1"&gt;...&lt;/div&gt; is not clickable at point (731, 559). Other element would receive the click: &lt;iframe frameborder="0" src="https://ebd8341df14ff2d48419905d9de7c056.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7317705A2+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317108E9+271401]
+	(No symbol) [0x00007FF73152FE6E]
+	(No symbol) [0x00007FF73157CD43]
+	(No symbol) [0x00007FF73157AFF4]
+	(No symbol) [0x00007FF731578D60]
+	(No symbol) [0x00007FF731577DA1]
+	(No symbol) [0x00007FF73156CA4C]
+	(No symbol) [0x00007FF731595F3A]
+	(No symbol) [0x00007FF73156C2FD]
+	(No symbol) [0x00007FF73156C1CD]
+	(No symbol) [0x00007FF731596220]
+	(No symbol) [0x00007FF73156C2FD]
+	(No symbol) [0x00007FF7315AFA97]
+	(No symbol) [0x00007FF731595BA3]
+	(No symbol) [0x00007FF73156B80C]
+	(No symbol) [0x00007FF73156ACED]
+	(No symbol) [0x00007FF73156B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EB524+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316A5D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316986E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EA27D+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317184E1+303137]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317148A4+287716]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317149DB+288027]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF73170C930+255088]
+	BaseThreadInitThunk [0x00007FFA3670257D+29]
+	RtlUserThreadStart [0x00007FFA379EAA58+40]
+</msg>
+<arg>${autocomplete_subject}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-08-22T14:52:42.665949" elapsed="1.359526">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="subjects-auto-complete__option subjects-auto-complete__option--is-focused css-1n7v3ny-option" id="react-select-2-option-0" tabindex="-1"&gt;...&lt;/div&gt; is not clickable at point (731, 559). Other element would receive the click: &lt;iframe frameborder="0" src="https://ebd8341df14ff2d48419905d9de7c056.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7317705A2+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317108E9+271401]
+	(No symbol) [0x00007FF73152FE6E]
+	(No symbol) [0x00007FF73157CD43]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF73156ACED]
+	(No symbol) [0x00007FF73156B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EB524+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316A5D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316986E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EA27D+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317184E1+303137]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317148A4+287716]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317149DB+288027]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF73170C930+255088]
+	BaseThreadInitThunk [0x00007FFA3670257D+29]
+	RtlUserThreadStart [0x00007FFA379EAA58+40]</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${input_gender_male}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-22T14:52:44.026478" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${checkbox_hobby_sports}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-22T14:52:44.027485" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${textarea_currentAddress}</arg>
+<arg>Rua Chafariz, 123, Bairro Limeira, Cidade SP</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-22T14:52:44.028474" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-08-22T14:52:41.199034" elapsed="2.829440">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="subjects-auto-complete__option subjects-auto-complete__option--is-focused css-1n7v3ny-option" id="react-select-2-option-0" tabindex="-1"&gt;...&lt;/div&gt; is not clickable at point (731, 559). Other element would receive the click: &lt;iframe frameborder="0" src="https://ebd8341df14ff2d48419905d9de7c056.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7317705A2+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317108E9+271401]
+	(No symbol) [0x00007FF73152FE6E]
+	(No symbol) [0x00007FF73157CD43]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF73156ACED]
+	(No symbol) [0x00007FF73156B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EB524+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316A5D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316986E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EA27D+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317184E1+303137]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317148A4+287716]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317149DB+288027]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF73170C930+255088]
+	BaseThreadInitThunk [0x00007FFA3670257D+29]
+	RtlUserThreadStart [0x00007FFA379EAA58+40]</status>
+</kw>
+<status status="FAIL" start="2024-08-22T14:52:26.401774" elapsed="17.627698">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="subjects-auto-complete__option subjects-auto-complete__option--is-focused css-1n7v3ny-option" id="react-select-2-option-0" tabindex="-1"&gt;...&lt;/div&gt; is not clickable at point (731, 559). Other element would receive the click: &lt;iframe frameborder="0" src="https://ebd8341df14ff2d48419905d9de7c056.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=127.0.2651.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7317705A2+11762]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317108E9+271401]
+	(No symbol) [0x00007FF73152FE6E]
+	(No symbol) [0x00007FF73157CD43]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF73156ACED]
+	(No symbol) [0x00007FF73156B3D1]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EB524+879700]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316A5D4F+56159]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7316986E3+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7318EA27D+874925]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317184E1+303137]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317148A4+287716]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7317149DB+288027]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF73170C930+255088]
+	BaseThreadInitThunk [0x00007FFA3670257D+29]
+	RtlUserThreadStart [0x00007FFA379EAA58+40]</status>
+</test>
+<status status="FAIL" start="2024-08-22T14:52:26.032869" elapsed="18.005611"/>
+</suite>
+<status status="FAIL" start="2024-08-22T14:52:26.025703" elapsed="18.018777"/>
+</suite>
+<status status="FAIL" start="2024-08-22T14:52:25.982809" elapsed="18.065664"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Preenchendo Forms">RobotFramework.Preenchendo Forms</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Form">RobotFramework.Preenchendo Forms.Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
